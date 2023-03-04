@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="styles/contextMenu.css">
 	<link rel="stylesheet" href="styles/navbar_footer.css">
 	<link rel="stylesheet" href="styles/int_popup.css">
+	<link rel="stylesheet" href="styles/my.css">
 	<script src="scripts/screen.js"></script>
 	<script src="scripts/int_popup.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
@@ -177,6 +178,14 @@
 		<div id="laws" style="max-height:500px; overflow-y:scroll"></div>
 	</div>
 
+	<div class="modal" data-modal="7">
+		<!--Сохраненные законы-->
+		<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" /></svg>
+		<h2 class="modal__title">Определение LT и GK по названию</h2>
+		<input id="search" placeholder="Название элемента" type="text">
+		<ul id="list"></ul>
+	</div>
+
 	<!-- Подложка под модальным окном -->
 	<div class="overlay js-overlay-modal"></div>
 
@@ -213,6 +222,7 @@
 			</ul>
 		</li>
 		<li><a class="js-open-modal" data-modal="4">Об авторах</a></li>
+		<li><a class="js-open-modal" data-modal="7">Поиск</a></li>
 	</ul>
 
 	<div style="height: 2.1vw;"></div>
@@ -243,6 +253,7 @@
 	<script src="scripts/utilities.js"></script>
 	<script src="scripts/data.js"></script>
 	<script src="scripts/generatehex.js"></script>
+	<script src="scripts/my.js"></script>
 	<script src="scripts/workWithHexagons.js"></script>
 	<ul id="footer">
 		<li><input type="text" id="outLT" placeholder="LT размерность" disabled /></li>

@@ -1,0 +1,39 @@
+#list li {
+    margin: 10px 0px;
+    background-color: lightblue;
+    display: flex;
+}
+
+#list span {
+    padding: 7px 20px;
+    margin: 0;
+}
+
+#list:first-child {
+}
+
+#list li:first-child {
+    margin: 0 0 10px 0;
+}
+
+#list li:last-child {
+    margin: 10px 0 0 0;
+}
+
+#search {
+    width: 400px;
+    font-size: 20px;
+    margin: 20px 0;
+    border-radius: 7px;
+    padding: 8px 17px;
+    border: dodgerblue 3px solid;
+    outline: 0px;
+}
+
+#list {
+    width: 100%;
+    height: 300px;
+    overflow-y: scroll;
+    font-size: 18px;
+    margin: 0;
+}
